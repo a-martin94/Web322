@@ -1,0 +1,62 @@
+<section id="sign-up">
+
+    {{#each error}}
+
+    <div>{{this}}</div>
+
+    {{/each}}
+
+
+    <form action="/registration" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label for="firstName">First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="firstName" name="firstName"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastName">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" id="lastName" name="lastName"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="text" id="email" name="email"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="passWord">Password</label>
+                </td>
+                <td>
+                    <input id="passWord" name="password" type = "password"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="confirmPassword">Confirm Password</label>
+                </td>
+                <td>
+                    <input id="confirmPassword" name="confirmPassword" type = "password"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <input type="submit" value="registration">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</section>

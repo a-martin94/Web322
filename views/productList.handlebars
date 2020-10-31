@@ -1,0 +1,33 @@
+<section>
+   
+
+    {{#each products}}
+
+            
+            <div class="card-products">
+            <div class="card-body-products">
+        
+           <figure class="list">
+
+            <p>
+                <img class="product-img" src={{this.src}}>
+            </p>
+
+            <p>
+                Title: {{this.title}}
+            </p>
+
+            <p>
+                Price: {{this.price}}
+            </p>
+
+            <p>
+                Description: {{this.description}}
+            </p>
+    
+           </figure>
+            </div>
+            </div>
+            
+    {{/each}}
+<section>

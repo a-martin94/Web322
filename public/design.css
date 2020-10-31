@@ -1,0 +1,62 @@
+body {
+    margin-bottom:50px;
+}
+
+
+.card-group {
+    width: 1000px;
+    height: 370px;
+    margin: 0%;
+    
+}
+
+.card {
+    border-color: blue;
+    width: 400px;
+    height: 370px;
+}
+
+#demo {
+    -webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 4px 4px 25px rgba(0,0,0,0); 
+    box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 4px 4px 25px rgba(0,0,0,0);
+        
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: -150px;
+    float: right;
+    text-decoration-color: blue;
+    top: 75px;
+    }
+
+.card-products {
+    width: 1000px;
+    height: 250px;
+    margin: 0%;
+}
+
+.card-body-products {
+    border-color: blue;
+    width: 400px;
+    height: 250px;
+}
+
+.product-img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer {
+   
+    position: fixed;
+    height: 25px;
+    background-color: rgb(107, 107, 107);
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+
+
