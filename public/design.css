@@ -58,5 +58,10 @@ body {
     margin-bottom: 0px;
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+
 
 
