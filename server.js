@@ -28,8 +28,8 @@ app.use("/",genralController);
 app.use("/",productsController);
 app.use("/",registrationController);
 
-
-const PORT= process.env.PORT;
+const PORT= 5001;
+//const PORT= process.env.PORT;
 app.listen(PORT,()=>{
     console.log('web server running');
 });
