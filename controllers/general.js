@@ -20,8 +20,24 @@ router.get("/login",(req,res)=>{
         headingInfo: "login",
 
     });
-   
+
+
 });
+
+
+router.get("/dashboard",(req,res)=>{
+
+    res.render("dashboard",{
+        title:"dashboard",
+        headingInfo: "dashboard",
+
+    });
+
+
+});
+
+
+
 
 
 module.exports = router;

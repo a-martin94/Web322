@@ -12,10 +12,13 @@
   "dependencies": {
     "@sendgrid/client": "^7.3.0",
     "@sendgrid/mail": "^7.3.0",
+    "bcrypt": "^5.0.0",
     "bootstrap": "^4.5.3",
+    "client-sessions": "^0.8.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
+    "mongoose": "^5.10.15",
     "sendgrid": "^5.2.3"
   }
 }
