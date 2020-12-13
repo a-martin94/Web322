@@ -121,11 +121,8 @@ router.post("/registration", (req, res) => {
         .catch(err=>{
             console.log(`Error ${err}`);
         })
-    
        
     }
-
-
 
 });
 
@@ -180,7 +177,7 @@ router.post("/user-login", (req, res) => {
                     if (isMatched == true) {
                         req.session.userInfo = newUser;
                         console.log("Password match");
-                        //res.redirect("dashboard");
+                        
 
                          if (newUser.userType == "User") {
                             res.redirect("dashboard");
@@ -190,12 +187,8 @@ router.post("/user-login", (req, res) => {
                         }
                         
                     } 
-
-                        
-                    
-                   // Password is bad
                    else {
-                    errors.push("Sorry, you entered the wrong username and/or password");
+                    errors.push("Incorrect password or username");
                     res.render("login", {
                         messages: errors
                     });

@@ -22,15 +22,15 @@ var userSchema = new Schema({
 
 	userSchema.pre("save",function(next) {
 		bcrypt.genSalt(10)
-		.then(salt => {
-			bcrypt.hash(this.password,salt)
-			.then(hash => {
-				this.password = hash;
+		.then(crypt => {
+			bcrypt.hash(this.password,crypt)
+			.then(encrypt => {
+				this.password = encrypt;
 				next();
 			})
-			.catch(err=>console.log(`Error: ${err}`));
+			.catch(error=>console.log(`Error: ${error}`));
 		})
-		.catch(err=>console.log(`Error: ${err}`));
+		.catch(error=>console.log(`Error: ${error}`));
 	});
 	
 	const userModel = mongoose.model("Users",userSchema);
