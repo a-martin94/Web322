@@ -13,11 +13,13 @@ router.get("/registration",(req,res)=>{
 
 });
 
-
-
-
+//For usuer athuentaction 
 router.get("/dashboard", (req, res) => {
-    res.render("dashboard", {user: req.session.userInfo, layout: false});
+    res.render("dashboard", {user: req.session.userInfo});
+  });
+
+  router.get("/adminDashboard", (req, res) => {
+    res.render("adminDashboard", {user: req.session.userInfo});
   });
 
 
@@ -164,7 +166,7 @@ router.post("/user-login", (req, res) => {
             
             if (newUser == null) {
                 
-                errors.push("Sorry, you entered the wrong username and/or password");
+                errors.push("Incorrect password or username.");
                 res.render("login", {
                     messages: errors
                 });
@@ -177,10 +179,19 @@ router.post("/user-login", (req, res) => {
                     // Password is good
                     if (isMatched == true) {
                         req.session.userInfo = newUser;
-                        console.log(req.session.userInfo.firstName);
                         console.log("Password match");
-                         res.redirect("dashboard");
-                        } 
+                        //res.redirect("dashboard");
+
+                         if (newUser.userType == "User") {
+                            res.redirect("dashboard");
+                        } else {
+                            
+                            res.redirect("adminDashboard");
+                        }
+                        
+                    } 
+
+                        
                     
                    // Password is bad
                    else {
